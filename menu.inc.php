@@ -9,7 +9,7 @@
                 <a href = "reseller-list.php" class="nav-link">Resellers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Products</a>
+                <a href = "product-list.php" class="nav-link">Products</a>
             </li>
             <li class="nav-item">
                 <a href = "order-list.php" class="nav-link">Orders</a>

@@ -1,12 +1,12 @@
 <?php
 // UTF-8 NΟ BOM 
 session_start();
-$_SESSION['list'] = 'order-list.php';
+$_SESSION['list'] = 'product-list.php';
 
 include 'db.php';
 
 // get result set
-$sql = "SELECT * FROM `ORDER` ORDER BY `Order_ID`";
+$sql = "SELECT * FROM `PRODUCT` ORDER BY `Serial_No` DESC";
 $rs = $pdo->query($sql, PDO::FETCH_OBJ);
 ?>
 
@@ -27,37 +27,31 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <?php require 'menu.inc.php'; ?>
-            <a href = "order-new.php" title="add a record" class="btn btn-success navbar-btn">New Order</a>
+            <a href = "product-new.php" title="add a record" class="btn btn-success navbar-btn">New Customer</a>
+            <!--a class="navbar-nav" href = "customer-new.php" title = "add a record">New</a>-->
         </nav>
         
 <div class="col-xl-12 mx-auto">
-        <h1>Orders</h1>
+        <h1>Product</h1>
         <!-- show result set -->
         <table class="table">
             <tr>
                 <th>Edit</th>
-                <th>ID</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Order Date</th>
-                <th>Shipping Date</th>
-                <th>OrderStatus</th>
-                <th>Employee</th>
+                <th>Type</th>
+                <th>Serial_No</th>
+                <th>Manufacturing_Date </th>
                 <th>Delete</th>
             </tr>
             
             <!-- PHP Database -->
             <?php while ($row = $rs->fetch()) { ?>
             <tr>
-                <td><a title="edit" href="order-edit.php?Order_ID=<?= $row->Order_ID ?>"><i class="fas fa-pencil-alt"></i></a></td>
-                <td><?= $row->Order_ID ?></td>
-                <td><?= $row->Quantity ?></td>
-                <td><?= $row->Price ?></td>
-                <td><?= $row->OrderDate ?></td>
-                <td><?= $row->ShippingDate ?></td>
-                <td><?= $row->OrderStatus ?></td>
-                <td><?= $row->Employee ?></td>
-                <td><a title="delete" href="order-delete.php?Order_ID=<?= $row->Order_ID ?>"><i class="fas fa-trash-alt"></i></a></td>
+                <td><a title="edit" href="product-edit.php?Serial_No=<?= $row->Serial_No ?>"><i class="fas fa-pencil-alt"></i></a></td>
+                <td><?= $row->Type ?></td>
+                <td><?= $row->Serial_No ?></td>
+                <td><?= $row->Manufacturing_Date ?></td>
+                
+                <td><a title="delete" href="product-delete.php?Serial_No=<?= $row->Serial_No ?>"><i class="fas fa-trash-alt"></i></a></td>
              </tr>
             <?php } ?>
             

@@ -4,12 +4,12 @@ session_start();
 require 'db.php';
 
 // get url parameter
-$Order_ID = $_GET['Order_ID'];
+$Serial_No = $_GET['Serial_No'];
 
 // delete record
-$sql = 'DELETE FROM `ORDER` WHERE Order_ID = ?';
+$sql = 'DELETE FROM `PRODUCT` WHERE Serial_No = ?';
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$Order_ID]);
+$stmt->execute([$Serial_No]);
 checkSQL($stmt);
 
 // return to list
