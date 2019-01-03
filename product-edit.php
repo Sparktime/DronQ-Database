@@ -2,7 +2,7 @@
 require 'db.php';
 
 // get url parameter
-$Serial_No = $_GET['Customer_ID'];
+$Serial_No = $_GET['Serial_No'];
 
 // get record
 $sql = "SELECT * FROM `PRODUCT` WHERE `Serial_No` = ?";
@@ -62,12 +62,12 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                 </div>
                 <div class="row">
                     <label>Serial_No
-                        <input type="text" readonly name="Serial No" value="<?= $row->Serial_No ?>">
+                        <input type="text" readonly name="Serial_No" value="<?= $row->Serial_No ?>">
                     </label>
                 </div>
                 <div class="row">
                     <label>Manufacturing_Date
-                        <input type="text" name="Manufacturing Date" value="<?= $row->Manufacturing_Date ?>">
+                        <input type="text" name="Manufacturing_Date" value="<?= $row->Manufacturing_Date ?>">
                     </label>
                 </div>
                 
@@ -79,4 +79,35 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

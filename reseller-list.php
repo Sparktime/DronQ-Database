@@ -6,7 +6,7 @@ $_SESSION['list'] = 'reseller-list.php';
 include 'db.php';
 
 // get result set
-$sql = "SELECT * FROM `RESELLER` ORDER BY `Company_Name`";
+$sql = "SELECT * FROM `RESELLER` ORDER BY `Company_Name` DESC";
 $rs = $pdo->query($sql, PDO::FETCH_OBJ);
 ?>
 

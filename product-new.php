@@ -4,7 +4,7 @@ session_start();
 require 'db.php';
 
 // insert record
-$sql = "INSERT INTO `PRODUCT` (Type, Serial_No, Manufacturing_Date) VALUES('','','')";
+$sql = "INSERT INTO `PRODUCT` (Type, Manufacturing_Date) VALUES('','')";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 checkSQL($stmt);

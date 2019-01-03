@@ -17,9 +17,9 @@ $Day_Of_Birth = $_POST['Day_Of_Birth'];
 $RegistrationDate = $_POST['RegistrationDate'];
 //$Order_ID = $_POST['$Order_ID'];
 
-if ($Order_ID == '') {
-    $Order_ID = null;
-}
+//if ($Order_ID == '') {
+//    $Order_ID = null;
+//}
 
 // update record
 $sql = "UPDATE `CUSTOMER` SET Customer_Surname = ?, Customer_Firstname = ?, Adress = ?, ZipCode = ?, City = ?, Country = ?, Email = ?, Telephone = ?, Day_Of_Birth = ?, RegistrationDate = ? WHERE Customer_ID = ?";

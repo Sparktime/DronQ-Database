@@ -6,7 +6,7 @@ $_SESSION['list'] = 'order-list.php';
 include 'db.php';
 
 // get result set
-$sql = "SELECT * FROM `ORDER` ORDER BY `Order_ID`";
+$sql = "SELECT * FROM `ORDER` ORDER BY `Order_ID` DESC";
 $rs = $pdo->query($sql, PDO::FETCH_OBJ);
 ?>
 
