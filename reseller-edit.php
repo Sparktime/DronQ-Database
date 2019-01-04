@@ -2,12 +2,12 @@
 require 'db.php';
 
 // get url parameter
-$Company_Name = $_GET['Company_Name'];
+$Reseller_ID = $_GET['Reseller_ID'];
 
 // get record
-$sql = "SELECT * FROM `RESELLER` WHERE `Company_Name` = ?";
+$sql = "SELECT * FROM `RESELLER` WHERE `Reseller_ID` = ?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$Company_Name]);
+$stmt->execute([$Reseller_ID]);
 checkSQL($stmt);
 
 $row = $stmt->fetch(PDO::FETCH_OBJ);
@@ -56,8 +56,13 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                 
         <h1>Reseller</h1>
         <div class="row">
+            <label>Reseller_ID
+                <input type="text" readonly name="Reseller_ID" value="<?= $row->Reseller_ID ?>">
+            </label>
+        </div>
+        <div class="row">
             <label>Company_Name
-                <input type="text" readonly name="Company_Name" value="<?= $row->Company_Name ?>">
+                <input type="text" name="Company_Name" value="<?= $row->Company_Name ?>">
             </label>
         </div>
         <div class="row">

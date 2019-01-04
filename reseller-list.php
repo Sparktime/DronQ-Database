@@ -6,7 +6,7 @@ $_SESSION['list'] = 'reseller-list.php';
 include 'db.php';
 
 // get result set
-$sql = "SELECT * FROM `RESELLER` ORDER BY `Company_Name` DESC";
+$sql = "SELECT * FROM `RESELLER` ORDER BY `Reseller_ID` DESC";
 $rs = $pdo->query($sql, PDO::FETCH_OBJ);
 ?>
 
@@ -48,7 +48,8 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                 <!-- PHP Database -->
                 <?php while ($row = $rs->fetch()) { ?>
                 <tr>
-                    <td><a title="edit" href="reseller-edit.php?Company_Name=<?= $row->Company_Name ?>"><i class="fas fa-pencil-alt"></i></a></td>
+                    <td><a title="edit" href="reseller-edit.php?Reseller_ID=<?= $row->Reseller_ID ?>"><i class="fas fa-pencil-alt"></i></a></td>
+                    <td><?= $row->Reseller_ID ?></td>
                     <td><?= $row->Company_Name ?></td>
                     <td><?= $row->Adress ?></td>
                     <td><?= $row->ZipCode ?></td>
@@ -56,7 +57,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                     <td><?= $row->Email ?></td>
                     <td><?= $row->Telephone ?></td>
                     <td><?= $row->Contact_Person ?></td>
-                    <td><a title="delete" href="reseller-delete.php?Company_Name=<?= $row->Company_Name ?>"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><a title="delete" href="reseller-delete.php?Reseller_ID=<?= $row->Reseller_ID ?>"><i class="fas fa-trash-alt"></i></a></td>
                  </tr>
                 <?php } ?>
 

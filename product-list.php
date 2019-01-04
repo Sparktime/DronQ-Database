@@ -37,8 +37,8 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         <table class="table">
             <tr>
                 <th>Edit</th>
-                <th>Type</th>
                 <th>Serial_No</th>
+                <th>Type</th>                
                 <th>Manufacturing_Date </th>
                 <th>Delete</th>
             </tr>
@@ -47,8 +47,8 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
             <?php while ($row = $rs->fetch()) { ?>
             <tr>
                 <td><a title="edit" href="product-edit.php?Serial_No=<?= $row->Serial_No ?>"><i class="fas fa-pencil-alt"></i></a></td>
-                <td><?= $row->Type ?></td>
                 <td><?= $row->Serial_No ?></td>
+                <td><?= $row->Type ?></td>
                 <td><?= $row->Manufacturing_Date ?></td>
                 
                 <td><a title="delete" href="product-delete.php?Serial_No=<?= $row->Serial_No ?>"><i class="fas fa-trash-alt"></i></a></td>

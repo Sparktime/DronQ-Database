@@ -30,6 +30,6 @@
                       var myWindow = window.open("create-tables.php", "_self")
                     txt = "Reset";}
                 else {txt = "Cancel";}
-                document.getElementById("demo").innerHTML = txt;
+//                document.getElementById("demo").innerHTML = txt;
                 }
         </script>

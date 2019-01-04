@@ -55,16 +55,17 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
         <div class="row">
 			<div class="col-xl-10">
                 <h1>Product</h1>
+                   <div class="row">
+                    <label>Serial_No
+                        <input type="text" readonly name="Serial_No" value="<?= $row->Serial_No ?>">
+                    </label>
+                </div>
                 <div class="row">
                     <label>Type
                         <input type="text" name="Type" value="<?= $row->Type ?>">
                     </label>
                 </div>
-                <div class="row">
-                    <label>Serial_No
-                        <input type="text" readonly name="Serial_No" value="<?= $row->Serial_No ?>">
-                    </label>
-                </div>
+
                 <div class="row">
                     <label>Manufacturing_Date
                         <input type="text" name="Manufacturing_Date" value="<?= $row->Manufacturing_Date ?>">
