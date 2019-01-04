@@ -4,12 +4,12 @@ session_start();
 require 'db.php';
 
 // get url parameter
-$Company_Name = $_GET['Company_Name'];
+$Reseller_ID = $_GET['Reseller_ID'];
 
 // delete record
-$sql = 'DELETE FROM `RESELLER` WHERE Company_Name = ?';
+$sql = 'DELETE FROM `RESELLER` WHERE Reseller_ID = ?';
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$Company_Name]);
+$stmt->execute([$Reseller_ID]);
 checkSQL($stmt);
 
 // return to list

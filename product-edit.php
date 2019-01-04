@@ -7,7 +7,7 @@ $Serial_No = $_GET['Serial_No'];
 // get record
 $sql = "SELECT * FROM `PRODUCT` WHERE `Serial_No` = ?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([Serial_No]);
+$stmt->execute([$Serial_No]);
 checkSQL($stmt);
 
 $row = $stmt->fetch(PDO::FETCH_OBJ);

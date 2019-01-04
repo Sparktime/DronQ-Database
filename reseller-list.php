@@ -35,6 +35,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
             <table class="table">
                 <tr>
                     <th>Edit</th>
+                    <th>Reseller_ID</th>
                     <th>Company_Name</th>
                     <th>Adress</th>
                     <th>ZipCode</th>

@@ -3,6 +3,7 @@
 session_start();
 $_SESSION['list'] = 'product-list.php';
 
+
 include 'db.php';
 
 // get result set
@@ -50,7 +51,6 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                 <td><?= $row->Serial_No ?></td>
                 <td><?= $row->Type ?></td>
                 <td><?= $row->Manufacturing_Date ?></td>
-                
                 <td><a title="delete" href="product-delete.php?Serial_No=<?= $row->Serial_No ?>"><i class="fas fa-trash-alt"></i></a></td>
              </tr>
             <?php } ?>

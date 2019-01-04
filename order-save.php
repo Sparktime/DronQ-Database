@@ -13,14 +13,14 @@ $OrderStatus = $_POST['OrderStatus'];
 $Employee = $_POST['Employee'];
 //$Order_ID = $_POST['$Order_ID'];
 
-if ($Order_ID == '') {
-    $Order_ID = null;
-}
+//if ($Order_ID == '') {
+//    $Order_ID = null;
+//}
 
 // update record
 $sql = "UPDATE `ORDER` SET Quantity = ?, Price = ?, OrderDate = ?, ShippingDate = ?, OrderStatus = ?, Employee = ? WHERE Order_ID = ?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$Quantity, $Price, $OrderDate, $ShippingDate, $OrderStatus, $Employee, $Customer_ID]);
+$stmt->execute([$Quantity, $Price, $OrderDate, $ShippingDate, $OrderStatus, $Employee, $Order_ID]);
 checkSQL($stmt);
 
 // return to list
