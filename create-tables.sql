@@ -49,7 +49,7 @@ CREATE TABLE `ORDER` (
     `ShippingDate` DATE,
     `OrderStatus` VARCHAR(40),
     `Employee` VARCHAR(40),
-    `Serial_No` INT,
+    `Serial_No` INT UNIQUE,
    `Reseller_ID` INT,
    `Customer_ID` INT,
     CONSTRAINT `FK_SerialNo`

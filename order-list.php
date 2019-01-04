@@ -27,7 +27,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <?php require 'menu.inc.php'; ?>
-            <a href = "order-new.php" title="add a record" class="btn btn-success navbar-btn">New Order</a>
+            <a href = "order-new.php"  onclick = "customer-new.php" title="add a record" class="btn btn-success navbar-btn">New Order</a>
         </nav>
         
 <div class="col-xl-12 mx-auto">
@@ -43,6 +43,9 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                 <th>Shipping Date</th>
                 <th>OrderStatus</th>
                 <th>Employee</th>
+                <th>Serial_No</th>
+                <th>Reseller_ID</th>
+                <th>Customer_ID</th>
                 <th>Delete</th>
             </tr>
             
@@ -57,6 +60,9 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                 <td><?= $row->ShippingDate ?></td>
                 <td><?= $row->OrderStatus ?></td>
                 <td><?= $row->Employee ?></td>
+                <td><?= $row->Serial_No ?></td>
+                <td><?= $row->Reseller_ID ?></td>
+                <td><?= $row->Customer_ID ?></td>
                 <td><a title="delete" href="order-delete.php?Order_ID=<?= $row->Order_ID ?>"><i class="fas fa-trash-alt"></i></a></td>
              </tr>
             <?php } ?>

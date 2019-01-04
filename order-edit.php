@@ -89,6 +89,21 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                         <input type="text" name="Employee" value="<?= $row->Employee ?>">
                     </label>
                 </div>
+                    <div class="row">
+                    <label>Serial_No
+                        <input type="text" name="Serial_No" value="<?= $row->Serial_No ?>">
+                    </label>
+                </div>
+                    <div class="row">
+                    <label>Reseller_ID
+                        <input type="text" name="Reseller_ID" value="<?= $row->Reseller_ID ?>">
+                    </label>
+                </div>
+                    <div class="row">
+                    <label>Customer_ID
+                        <input type="text" name="Customer_ID" value="<?= $row->Customer_ID ?>">
+                    </label>
+                </div>
             </div>
         </div>
       </div>
