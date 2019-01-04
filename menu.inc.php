@@ -1,6 +1,6 @@
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href = "." class="navbar-brand">Home</a>
+                <a href = "database.php" class="navbar-brand">Home</a>
             </li>
             <li class="nav-item">
                 <a href = "customer-list.php" class="nav-link">Customers</a>

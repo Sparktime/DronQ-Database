@@ -35,7 +35,7 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
             <div class="container col-xl-12">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href= "." class="nav-link navbar-brand" >Home</a>
+                        <a href= "database.php" class="nav-link navbar-brand" >Home</a>
                     </li>
                     <li class="nav-item">		     
 				        <a href= "reseller-list.php" class="nav-link" >Resellers</a>

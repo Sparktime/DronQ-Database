@@ -27,7 +27,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <?php require 'menu.inc.php'; ?>
-            <a href = "order-new.php"  onclick = "customer-new.php" title="add a record" class="btn btn-success navbar-btn">New Order</a>
+            <a href = "order-new.php" title="add a record" class="btn btn-success navbar-btn">New Order</a>
         </nav>
         
 <div class="col-xl-12 mx-auto">
