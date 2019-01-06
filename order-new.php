@@ -18,10 +18,3 @@ $stmt->execute();
 checkSQL($stmt);
 
 header('location: order-list.php');
-//// return to list
-//if(isset($_SESSION['list'])) {
-//    header('location: ' . $_SESSION['list']);   
-//} else {
-//    header('location: .');
-//}
-//

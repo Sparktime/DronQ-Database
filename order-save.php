@@ -14,11 +14,6 @@ $Employee = $_POST['Employee'];
 $Serial_No = $_POST['Serial_No'];
 $Reseller_ID = $_POST['Reseller_ID'];
 $Customer_ID = $_POST['Customer_ID'];
-//$Order_ID = $_POST['$Order_ID'];
-
-//if ($Order_ID == '') {
-//    $Order_ID = null;
-//}
 
 // update record
 $sql = "UPDATE `ORDER` SET Quantity = ?, Price = ?, OrderDate = ?, ShippingDate = ?, OrderStatus = ?, Employee = ?, Serial_No = ?, Reseller_ID = ?, Customer_ID = ? WHERE Order_ID = ?";

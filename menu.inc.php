@@ -1,3 +1,4 @@
+
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a href = "database.php" class="navbar-brand">Home</a>
@@ -18,8 +19,8 @@
                 <button type="button"
                  class="btn btn-danger navbar-btn" onclick="resetfunction()">Reset Database</button>
             </li>
-            <!--<a href = "customer-list-2.php">klanten (join)</a>-->
-        </ul>
+          </ul>
+    
 
 <!-- Warning before reset -->
         <script>
@@ -30,6 +31,6 @@
                       var myWindow = window.open("create-tables.php", "_self")
                     txt = "Reset";}
                 else {txt = "Cancel";}
-//                document.getElementById("demo").innerHTML = txt;
+
                 }
         </script>

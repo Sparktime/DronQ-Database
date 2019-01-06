@@ -12,18 +12,14 @@ $City = $_POST['City'];
 $Email = $_POST['Email'];
 $Telephone = $_POST['Telephone'];
 $Contact_Person = $_POST['Contact_Person'];
-console.log("Resellersave tot line 14"); 
 
-//if ($Order_ID == '') {
-//    $Order_ID = null;
-//}
 
 // update record
 $sql = "UPDATE `RESELLER` SET Company_Name = ?, Adress = ?, ZipCode = ?, City = ?, Email = ?, Telephone = ?, Contact_Person = ? WHERE Reseller_ID = ?";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$Company_Name, $Adress, $ZipCode, $City, $Email, $Telephone, $Contact_Person, $Reseller_ID]);
 checkSQL($stmt);
-console.log("Resellersave tot line 25"); 
+
 
 // return to list
 if(isset($_SESSION['list'])) {
