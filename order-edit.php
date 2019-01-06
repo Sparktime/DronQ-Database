@@ -64,11 +64,6 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                     </label>
                 </div>
                 <div class="row">
-                    <label>Quantity
-                        <input type="text" name="Quantity" value="<?= $row->Quantity ?>">
-                    </label>
-                </div>
-                <div class="row">
                     <label>Price
                         <input type="text" name="Price" value="<?= $row->Price ?>">
                     </label>

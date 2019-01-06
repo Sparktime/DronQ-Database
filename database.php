@@ -20,14 +20,15 @@
         </div>
 
     <!-- Masthead -->
-        <header class="masthead text-white text-center">
+        <header class="masthead text-white text-top">
             <div class="overlay">
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
                         <h1 class="mb-5">DronQ</h1>
-                        <h4 class="mb-5">Order Now.</h4>
+                        <div data-type="countdown" data-id="923974" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%"><a href="//www.tickcounter.com/countdown/923974/my-countdown" title="My countdown">My countdown</a><a href="//www.tickcounter.com/" title="Countdown">Countdown</a></div><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+<!--                        <h4 class="mb-5">Order Now.</h4>-->
                     </div>
                 </div>
             </div>

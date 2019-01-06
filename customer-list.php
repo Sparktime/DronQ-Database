@@ -43,7 +43,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                 <th>ID</th>
                 <th>Surname</th>
                 <th>Firstname </th>
-                <th>Adress</th>
+                <th>Address</th>
                 <th>ZIP Code</th>
                 <th>City</th>
                 <th>Country</th>
@@ -61,7 +61,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                 <td><?= $row->Customer_ID ?></td>
                 <td><?= $row->Customer_Surname ?></td>
                 <td><?= $row->Customer_Firstname ?></td>
-                <td><?= $row->Adress ?></td>
+                <td><?= $row->Address ?></td>
                 <td><?= $row->ZipCode ?></td>
                 <td><?= $row->City ?></td>
                 <td><?= $row->Country ?></td>

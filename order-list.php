@@ -41,7 +41,6 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
             <tr>
                 <th>Edit</th>
                 <th>ID</th>
-                <th>Quantity</th>
                 <th>Price</th>
                 <th>Order Date</th>
                 <th>Shipping Date</th>
@@ -58,7 +57,6 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
             <tr>
                 <td><a title="edit" href="order-edit.php?Order_ID=<?= $row->Order_ID ?>"><i class="fas fa-pencil-alt"></i></a></td>
                 <td><?= $row->Order_ID ?></td>
-                <td><?= $row->Quantity ?></td>
                 <td><?= $row->Price ?></td>
                 <td><?= $row->OrderDate ?></td>
                 <td><?= $row->ShippingDate ?></td>

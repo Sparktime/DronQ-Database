@@ -6,7 +6,7 @@ require 'db.php';
 // get post parameter
 $Reseller_ID = $_POST['Reseller_ID'];
 $Company_Name = $_POST['Company_Name'];
-$Adress = $_POST['Adress'];
+$Address = $_POST['Address'];
 $ZipCode = $_POST['ZipCode'];
 $City = $_POST['City'];
 $Email = $_POST['Email'];
@@ -15,9 +15,9 @@ $Contact_Person = $_POST['Contact_Person'];
 
 
 // update record
-$sql = "UPDATE `RESELLER` SET Company_Name = ?, Adress = ?, ZipCode = ?, City = ?, Email = ?, Telephone = ?, Contact_Person = ? WHERE Reseller_ID = ?";
+$sql = "UPDATE `RESELLER` SET Company_Name = ?, Address = ?, ZipCode = ?, City = ?, Email = ?, Telephone = ?, Contact_Person = ? WHERE Reseller_ID = ?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$Company_Name, $Adress, $ZipCode, $City, $Email, $Telephone, $Contact_Person, $Reseller_ID]);
+$stmt->execute([$Company_Name, $Address, $ZipCode, $City, $Email, $Telephone, $Contact_Person, $Reseller_ID]);
 checkSQL($stmt);
 
 

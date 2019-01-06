@@ -40,7 +40,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                     <th>Edit</th>
                     <th>Reseller_ID</th>
                     <th>Company_Name</th>
-                    <th>Adress</th>
+                    <th>Address</th>
                     <th>ZipCode</th>
                     <th>City</th>
                     <th>Email</th>
@@ -55,7 +55,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                     <td><a title="edit" href="reseller-edit.php?Reseller_ID=<?= $row->Reseller_ID ?>"><i class="fas fa-pencil-alt"></i></a></td>
                     <td><?= $row->Reseller_ID ?></td>
                     <td><?= $row->Company_Name ?></td>
-                    <td><?= $row->Adress ?></td>
+                    <td><?= $row->Address ?></td>
                     <td><?= $row->ZipCode ?></td>
                     <td><?= $row->City ?></td>
                     <td><?= $row->Email ?></td>

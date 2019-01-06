@@ -75,8 +75,8 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                     </label>
                 </div>
                 <div class="row">
-                    <label>Adress
-                        <input type="text" name="Adress" value="<?= $row->Adress ?>">
+                    <label>Address
+                        <input type="text" name="Address" value="<?= $row->Address ?>">
                     </label>
                 </div>
                 <div class="row">
