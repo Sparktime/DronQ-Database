@@ -187,11 +187,6 @@ WHERE `Company_Name` = 'BCC'
 
 -- =========================
 
-SELECT * FROM `ORDER`
-WHERE `OrderDate` 
-BETWEEN DATE_SUB(curdate(), INTERVAL 4 WEEK) AND CURDATE()
-
-
 -- Delete:
 
 -- Delete alle order van 2015 en ouder
