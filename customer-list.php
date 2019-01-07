@@ -40,11 +40,11 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         <table class="table">
             <tr>
                 <th>Edit</th>
-                <th>ID</th>
+                <th>Customer ID</th>
                 <th>Surname</th>
                 <th>Firstname </th>
                 <th>Address</th>
-                <th>ZIP Code</th>
+                <th>ZipCode</th>
                 <th>City</th>
                 <th>Country</th>
                 <th>E-mail</th>

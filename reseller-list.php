@@ -38,14 +38,15 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
             <table class="table">
                 <tr>
                     <th>Edit</th>
-                    <th>Reseller_ID</th>
-                    <th>Company_Name</th>
+                    <th>Reseller ID</th>
+                    <th>Company Name</th>
                     <th>Address</th>
                     <th>ZipCode</th>
-                    <th>City</th>
+                    <th>City</th>                    
+                    <th>Country</th>
                     <th>Email</th>
                     <th>Telephone</th>
-                    <th>Contact_Person</th>
+                    <th>Contact Person</th>
                     <th>Delete</th>
                 </tr>
 
@@ -56,8 +57,9 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                     <td><?= $row->Reseller_ID ?></td>
                     <td><?= $row->Company_Name ?></td>
                     <td><?= $row->Address ?></td>
-                    <td><?= $row->ZipCode ?></td>
+                    <td><?= $row->ZipCode ?></td>                    
                     <td><?= $row->City ?></td>
+                    <td><?= $row->Country ?></td>
                     <td><?= $row->Email ?></td>
                     <td><?= $row->Telephone ?></td>
                     <td><?= $row->Contact_Person ?></td>

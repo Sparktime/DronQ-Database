@@ -60,13 +60,13 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                 
         <h1>Reseller</h1>
         <div class="row">
-            <label>Reseller_ID
-                <input type="text" readonly name="Reseller_ID" value="<?= $row->Reseller_ID ?>">
+            <label>Reseller ID
+                <input type="text" readonly name="Reseller ID" value="<?= $row->Reseller_ID ?>">
             </label>
         </div>
         <div class="row">
-            <label>Company_Name
-                <input type="text" name="Company_Name" value="<?= $row->Company_Name ?>">
+            <label>Company Name
+                <input type="text" name="Company Name" value="<?= $row->Company_Name ?>">
             </label>
         </div>
         <div class="row">
@@ -86,6 +86,12 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
         </div>
         <div class="row">
             <label>
+                Country
+                <input type="text" name="Country" value="<?= $row->Country ?>">
+            </label>
+        </div>
+        <div class="row">
+            <label>
                 Email
                 <input type="text" name="Email" value="<?= $row->Email ?>">
             </label>
@@ -96,8 +102,8 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
             </label>
         </div>
         <div class="row">
-            <label>Contact_Person
-                <input type="text" name="Contact_Person" value="<?= $row->Contact_Person ?>">
+            <label>Contact Person
+                <input type="text" name="Contact Person" value="<?= $row->Contact_Person ?>">
             </label>
         </div>
         </div>

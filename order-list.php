@@ -40,7 +40,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         <table class="table">
             <tr>
                 <th>Edit</th>
-                <th>ID</th>
+                <th>Order ID</th>
                 <th>Price</th>
                 <th>Order Date</th>
                 <th>Shipping Date</th>

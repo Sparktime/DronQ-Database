@@ -41,9 +41,9 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         <table class="table">
             <tr>
                 <th>Edit</th>
-                <th>Serial_No</th>
+                <th>Serial No</th>
                 <th>Type</th>                
-                <th>Manufacturing_Date </th>
+                <th>Manufacturing Date </th>
                 <th>Delete</th>
             </tr>
             

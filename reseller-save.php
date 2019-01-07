@@ -9,15 +9,16 @@ $Company_Name = $_POST['Company_Name'];
 $Address = $_POST['Address'];
 $ZipCode = $_POST['ZipCode'];
 $City = $_POST['City'];
+$Country = $_POST['Country'];
 $Email = $_POST['Email'];
 $Telephone = $_POST['Telephone'];
 $Contact_Person = $_POST['Contact_Person'];
 
 
 // update record
-$sql = "UPDATE `RESELLER` SET Company_Name = ?, Address = ?, ZipCode = ?, City = ?, Email = ?, Telephone = ?, Contact_Person = ? WHERE Reseller_ID = ?";
+$sql = "UPDATE `RESELLER` SET Company_Name = ?, Address = ?, ZipCode = ?, City = ?, Country = ?, Email = ?, Telephone = ?, Contact_Person = ? WHERE Reseller_ID = ?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$Company_Name, $Address, $ZipCode, $City, $Email, $Telephone, $Contact_Person, $Reseller_ID]);
+$stmt->execute([$Company_Name, $Address, $ZipCode, $City, $Country, $Email, $Telephone, $Contact_Person, $Reseller_ID]);
 checkSQL($stmt);
 
 
