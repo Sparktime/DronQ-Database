@@ -25,6 +25,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
         
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
     </head>
 
     <body>
@@ -35,6 +36,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         </nav>
         
 <div class="col-xl-12 mx-auto">
+        <h1>O</h1>
         <h1>Orders</h1>
         <!-- show result set -->
         <table class="table">

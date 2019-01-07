@@ -36,6 +36,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         </nav>
         
 <div class="col-xl-12 mx-auto">
+        <h1>P</h1>
         <h1>Product</h1>
         <!-- show result set -->
         <table class="table">
