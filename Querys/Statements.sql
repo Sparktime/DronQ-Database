@@ -46,6 +46,7 @@ FROM `CUSTOMER`
 WHERE `City` = tmp;
 END
 //
+DELIMITER ;
 
 -- ==========================
 
@@ -56,6 +57,8 @@ INNER JOIN `CUSTOMER`
 ON  `CUSTOMER`.`Customer_ID` = `ORDER`.`Customer_ID`
 WHERE `ORDER`.`OrderDate` BETWEEN '2017-01-01' AND '2017-12-31'
 ORDER BY `OrderDate`
+
+-- PROCEDURES:
 
 DELIMITER //
 CREATE PROCEDURE Sales2017()
@@ -81,6 +84,22 @@ WHERE `ORDER`.`OrderDate`
 BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE()
 ORDER BY `OrderDate`
 
+-- PROCEDURES:
+
+DELIMITER //
+CREATE PROCEDURE SerienummerVorigjaar
+BEGIN
+SELECT `ORDER`.`OrderDate`, `ORDER`.`Serial_No`,`PRODUCT`.`Type`
+FROM `ORDER`
+LEFT JOIN `PRODUCT`
+ON `PRODUCT`.`Serial_No` = `ORDER`.`Serial_No`
+WHERE `ORDER`.`OrderDate` 
+BETWEEN DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND CURDATE()
+ORDER BY `OrderDate`;
+END
+//
+DELIMITER ;
+
 -- ===========================
  
 -- Medewerker van het jaar:
@@ -102,6 +121,7 @@ FROM `ORDER`
 WHERE `OrderDate` BETWEEN DATE_SUB(curdate(), INTERVAL 1 YEAR) AND CURDATE();
 END
 //
+DELIMITER ;
 
 -- ==========================
 
@@ -126,6 +146,7 @@ BEGIN
   WHERE `City` = tmp;
 END
 //
+DELIMITER ;
 
 -- Slechtste reseller van het jaar
 
