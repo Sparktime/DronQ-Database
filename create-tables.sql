@@ -44,7 +44,6 @@ CREATE TABLE `CUSTOMER` (
 
 CREATE TABLE `ORDER` (
 	`Order_ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	`Quantity` INT,
 	`Price` VARCHAR(40),
 	`OrderDate` DATE,
     `ShippingDate` DATE,
