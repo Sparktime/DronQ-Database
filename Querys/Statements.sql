@@ -185,6 +185,21 @@ UPDATE `RESELLER`
 SET `Company_Name` = 'Saturn'
 WHERE `Company_Name` = 'BCC'
 
+-- PROCEDURES
+
+DELIMITER //
+CREATE PROCEDURE ChangeCompanyname (
+   tmp1 varchar(64),
+   tmp2 varchar(64)
+) 
+BEGIN
+UPDATE `RESELLER`
+SET `Company_Name` = tmp2
+WHERE `Company_Name` = tmp1;
+END
+//
+DELIMITER ;
+
 -- =========================
 
 -- Delete:
