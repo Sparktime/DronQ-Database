@@ -189,8 +189,8 @@ WHERE `Company_Name` = 'BCC'
 
 DELIMITER //
 CREATE PROCEDURE ChangeCompanyname (
-   tmp1 varchar(64),
-   tmp2 varchar(64)
+   tmp1 varchar(40),
+   tmp2 varchar(40)
 ) 
 BEGIN
 UPDATE `RESELLER`
