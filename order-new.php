@@ -8,10 +8,7 @@ $sql = "INSERT INTO `ORDER` (Price, OrderDate, ShippingDate, OrderStatus, Employ
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 checkSQL($stmt);
-//$sql = "INSERT INTO `CUSTOMER` (Customer_Surname, Customer_Firstname, Address, ZipCode, Country, Email, Telephone, Day_Of_Birth, RegistrationDate) VALUES('','','','','','','','','')";
-//$stmt = $pdo->prepare($sql);
-//$stmt->execute();
-//checkSQL($stmt);
+
 $sql = "INSERT INTO `PRODUCT` (Type, Manufacturing_Date) VALUES('',CURDATE())";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
