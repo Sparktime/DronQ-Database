@@ -9,8 +9,8 @@ header('Expires: 0');
 
 // connection parameters to local database could be:
 $dsn = 'mysql:dbname=83480Dronq;host=sql1.pcextreme.nl;charset=utf8'; // no hyphen in utf8
-$user = '83480Dronq';
-$pass = 'DronQ2018';
+$user = '83480Manager';
+$pass = 'DronQManager!';
 
 // my connection paramaters are secret
 include 'db-settings.php';
