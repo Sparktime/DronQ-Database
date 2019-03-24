@@ -8,9 +8,11 @@ header('Pragma: no-cache');
 header('Expires: 0');
 
 // connection parameters to local database could be:
-$dsn = 'mysql:dbname=83480Dronq;host=sql1.pcextreme.nl;charset=utf8'; // no hyphen in utf8
+//$dsn = 'mysql:dbname=83480Dronq;host=sql1.pcextreme.nl;charset=utf8'; // no hyphen in utf8
+$host = 'sql1.pcextreme.nl';
 $user = '83480Manager';
 $pass = 'DronQManager!';
+$db = '83480Dronq';
 $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 // my connection paramaters are secret
 include 'db-settings.php';
