@@ -11,7 +11,7 @@ header('Expires: 0');
 $dsn = 'mysql:dbname=83480Dronq;host=sql1.pcextreme.nl;charset=utf8'; // no hyphen in utf8
 $user = '83480Manager';
 $pass = 'DronQManager!';
-
+$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 // my connection paramaters are secret
 include 'db-settings.php';
 
