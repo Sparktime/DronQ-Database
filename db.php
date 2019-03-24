@@ -15,7 +15,7 @@ $pass = 'DronQManager!';
 $db = '83480Dronq';
 $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 // my connection paramaters are secret
-include 'db-settings.php';
+//include 'db-settings.php';
 
 //// connect to database
 //try {
