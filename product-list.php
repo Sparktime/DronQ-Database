@@ -36,14 +36,15 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         </nav>
         
 <div class="col-xl-12 mx-auto">
+        <h1>P</h1>
         <h1>Product</h1>
         <!-- show result set -->
         <table class="table">
             <tr>
                 <th>Edit</th>
-                <th>Serial_No</th>
+                <th>Serial No</th>
                 <th>Type</th>                
-                <th>Manufacturing_Date </th>
+                <th>Manufacturing Date </th>
                 <th>Delete</th>
             </tr>
             

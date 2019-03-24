@@ -20,16 +20,8 @@
         </div>
 
     <!-- Masthead -->
-        <header class="masthead text-white text-center">
+        <header class="masthead text-white text-top">
             <div class="overlay">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <h1 class="mb-5">DronQ</h1>
-                        <h4 class="mb-5">Order Now.</h4>
-                    </div>
-                </div>
             </div>
         </header>
     </body>

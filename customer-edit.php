@@ -60,23 +60,23 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
 			<div class="col-xl-10">
                 <h1>Customer</h1>
                 <div class="row">
-                    <label>Customer_ID
-                        <input type="text" readonly name="Customer_ID" value="<?= $row->Customer_ID ?>">
+                    <label>Customer ID
+                        <input type="text" readonly name="Customer ID" value="<?= $row->Customer_ID ?>">
                     </label>
                 </div>
                 <div class="row">
-                    <label>Customer_Surname
-                        <input type="text" name="Customer_Surname" value="<?= $row->Customer_Surname ?>">
+                    <label>Customer Surname
+                        <input type="text" name="Customer Surname" value="<?= $row->Customer_Surname ?>">
                     </label>
                 </div>
                 <div class="row">
-                    <label>Customer_Firstname
-                        <input type="text" name="Customer_Firstname" value="<?= $row->Customer_Firstname ?>">
+                    <label>Customer Firstname
+                        <input type="text" name="Customer Firstname" value="<?= $row->Customer_Firstname ?>">
                     </label>
                 </div>
                 <div class="row">
-                    <label>Adress
-                        <input type="text" name="Adress" value="<?= $row->Adress ?>">
+                    <label>Address
+                        <input type="text" name="Address" value="<?= $row->Address ?>">
                     </label>
                 </div>
                 <div class="row">
@@ -106,8 +106,8 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                     </label>
                 </div>
                 <div class="row">
-                    <label>Day_Of_Birth
-                        <input type="text" name="Day_Of_Birth" value="<?= $row->Day_Of_Birth ?>">
+                    <label>Day Of Birth
+                        <input type="text" name="Day Of Birth" value="<?= $row->Day_Of_Birth ?>">
                     </label>
                 </div>
                 <div class="row">

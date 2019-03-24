@@ -25,6 +25,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
         
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
     </head>
 
     <body>
@@ -35,13 +36,13 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         </nav>
         
 <div class="col-xl-12 mx-auto">
+        <h1>O</h1>
         <h1>Orders</h1>
         <!-- show result set -->
         <table class="table">
             <tr>
                 <th>Edit</th>
-                <th>ID</th>
-                <th>Quantity</th>
+                <th>Order ID</th>
                 <th>Price</th>
                 <th>Order Date</th>
                 <th>Shipping Date</th>
@@ -58,7 +59,6 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
             <tr>
                 <td><a title="edit" href="order-edit.php?Order_ID=<?= $row->Order_ID ?>"><i class="fas fa-pencil-alt"></i></a></td>
                 <td><?= $row->Order_ID ?></td>
-                <td><?= $row->Quantity ?></td>
                 <td><?= $row->Price ?></td>
                 <td><?= $row->OrderDate ?></td>
                 <td><?= $row->ShippingDate ?></td>

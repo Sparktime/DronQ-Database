@@ -4,15 +4,12 @@ session_start();
 require 'db.php';
 
 // insert record
-$sql = "INSERT INTO `ORDER` (Quantity, Price, OrderDate, ShippingDate, OrderStatus, Employee) VALUES('1','','','','','')";
+$sql = "INSERT INTO `ORDER` (Price, OrderDate, ShippingDate, OrderStatus, Employee) VALUES('',CURDATE(),'','','')";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 checkSQL($stmt);
-$sql = "INSERT INTO `CUSTOMER` (Customer_Surname, Customer_Firstname, Adress, ZipCode, Country, Email, Telephone, Day_Of_Birth, RegistrationDate) VALUES('','','','','','','','','')";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-checkSQL($stmt);
-$sql = "INSERT INTO `PRODUCT` (Type, Manufacturing_Date) VALUES('','')";
+
+$sql = "INSERT INTO `PRODUCT` (Type, Manufacturing_Date) VALUES('',CURDATE())";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 checkSQL($stmt);

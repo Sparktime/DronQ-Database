@@ -5,7 +5,6 @@ require 'db.php';
 
 // get post parameter
 $Order_ID = $_POST['Order_ID'];
-$Quantity = $_POST['Quantity'];
 $Price = $_POST['Price'];
 $OrderDate = $_POST['OrderDate'];
 $ShippingDate = $_POST['ShippingDate'];
@@ -16,9 +15,9 @@ $Reseller_ID = $_POST['Reseller_ID'];
 $Customer_ID = $_POST['Customer_ID'];
 
 // update record
-$sql = "UPDATE `ORDER` SET Quantity = ?, Price = ?, OrderDate = ?, ShippingDate = ?, OrderStatus = ?, Employee = ?, Serial_No = ?, Reseller_ID = ?, Customer_ID = ? WHERE Order_ID = ?";
+$sql = "UPDATE `ORDER` SET Price = ?, OrderDate = ?, ShippingDate = ?, OrderStatus = ?, Employee = ?, Serial_No = ?, Reseller_ID = ?, Customer_ID = ? WHERE Order_ID = ?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$Quantity, $Price, $OrderDate, $ShippingDate, $OrderStatus, $Employee, $Serial_No, $Reseller_ID, $Customer_ID, $Order_ID]);
+$stmt->execute([$Price, $OrderDate, $ShippingDate, $OrderStatus, $Employee, $Serial_No, $Reseller_ID, $Customer_ID, $Order_ID]);
 checkSQL($stmt);
 
 // return to list

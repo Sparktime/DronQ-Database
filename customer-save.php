@@ -7,7 +7,7 @@ require 'db.php';
 $Customer_ID = $_POST['Customer_ID'];
 $Customer_Surname = $_POST['Customer_Surname'];
 $Customer_Firstname = $_POST['Customer_Firstname'];
-$Adress = $_POST['Adress'];
+$Address = $_POST['Address'];
 $ZipCode = $_POST['ZipCode'];
 $City = $_POST['City'];
 $Country = $_POST['Country'];
@@ -17,9 +17,9 @@ $Day_Of_Birth = $_POST['Day_Of_Birth'];
 $RegistrationDate = $_POST['RegistrationDate'];
 
 // update record
-$sql = "UPDATE `CUSTOMER` SET Customer_Surname = ?, Customer_Firstname = ?, Adress = ?, ZipCode = ?, City = ?, Country = ?, Email = ?, Telephone = ?, Day_Of_Birth = ?, RegistrationDate = ? WHERE Customer_ID = ?";
+$sql = "UPDATE `CUSTOMER` SET Customer_Surname = ?, Customer_Firstname = ?, Address = ?, ZipCode = ?, City = ?, Country = ?, Email = ?, Telephone = ?, Day_Of_Birth = ?, RegistrationDate = ? WHERE Customer_ID = ?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$Customer_Surname, $Customer_Firstname, $Adress, $ZipCode, $City, $Country, $Email, $Telephone, $Day_Of_Birth, $RegistrationDate, $Customer_ID]);
+$stmt->execute([$Customer_Surname, $Customer_Firstname, $Address, $ZipCode, $City, $Country, $Email, $Telephone, $Day_Of_Birth, $RegistrationDate, $Customer_ID]);
 checkSQL($stmt);
 
 // return to list

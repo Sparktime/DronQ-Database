@@ -59,13 +59,8 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
 			<div class="col-xl-10">
                 <h1>Order</h1>
                 <div class="row">
-                    <label>Order_ID
-                        <input type="text" readonly name="Order_ID" value="<?= $row->Order_ID ?>">
-                    </label>
-                </div>
-                <div class="row">
-                    <label>Quantity
-                        <input type="text" name="Quantity" value="<?= $row->Quantity ?>">
+                    <label>Order ID
+                        <input type="text" readonly name="Order ID" value="<?= $row->Order_ID ?>">
                     </label>
                 </div>
                 <div class="row">
@@ -74,18 +69,18 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                     </label>
                 </div>
                 <div class="row">
-                    <label>OrderDate
-                        <input type="text" name="OrderDate" value="<?= $row->OrderDate ?>">
+                    <label>Order Date
+                        <input type="text" name="Order Date" value="<?= $row->OrderDate ?>">
                     </label>
                             </div>
                 <div class="row">
-                    <label>ShippingDate
-                        <input type="text" name="ShippingDate" value="<?= $row->ShippingDate ?>">
+                    <label>Shipping Date
+                        <input type="text" name="Shipping Date" value="<?= $row->ShippingDate ?>">
                     </label>
                 </div>
                 <div class="row">
-                    <label>OrderStatus
-                        <input type="text" name="OrderStatus" value="<?= $row->OrderStatus ?>">
+                    <label>Order Status
+                        <input type="text" name="Order Status" value="<?= $row->OrderStatus ?>">
                     </label>
                 </div>
                 <div class="row">
@@ -94,18 +89,18 @@ $row = $stmt->fetch(PDO::FETCH_OBJ);
                     </label>
                 </div>
                     <div class="row">
-                    <label>Serial_No
-                        <input type="text" name="Serial_No" value="<?= $row->Serial_No ?>">
+                    <label>Serial No
+                        <input type="text" name="Serial No" value="<?= $row->Serial_No ?>">
                     </label>
                 </div>
                     <div class="row">
-                    <label>Reseller_ID
-                        <input type="text" name="Reseller_ID" value="<?= $row->Reseller_ID ?>">
+                    <label>Reseller ID
+                        <input type="text" name="Reseller ID" value="<?= $row->Reseller_ID ?>">
                     </label>
                 </div>
                     <div class="row">
-                    <label>Customer_ID
-                        <input type="text" name="Customer_ID" value="<?= $row->Customer_ID ?>">
+                    <label>Customer ID
+                        <input type="text" name="Customer ID" value="<?= $row->Customer_ID ?>">
                     </label>
                 </div>
             </div>

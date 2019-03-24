@@ -35,16 +35,17 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
         </nav>
         
 <div class="col-xl-12 mx-auto">
-        <h1>Klanten</h1>
+        <h1>C</h1>
+        <h1>Customers</h1>
         <!-- show result set -->
         <table class="table">
             <tr>
                 <th>Edit</th>
-                <th>ID</th>
+                <th>Customer ID</th>
                 <th>Surname</th>
                 <th>Firstname </th>
-                <th>Adress</th>
-                <th>ZIP Code</th>
+                <th>Address</th>
+                <th>ZipCode</th>
                 <th>City</th>
                 <th>Country</th>
                 <th>E-mail</th>
@@ -61,7 +62,7 @@ $rs = $pdo->query($sql, PDO::FETCH_OBJ);
                 <td><?= $row->Customer_ID ?></td>
                 <td><?= $row->Customer_Surname ?></td>
                 <td><?= $row->Customer_Firstname ?></td>
-                <td><?= $row->Adress ?></td>
+                <td><?= $row->Address ?></td>
                 <td><?= $row->ZipCode ?></td>
                 <td><?= $row->City ?></td>
                 <td><?= $row->Country ?></td>
